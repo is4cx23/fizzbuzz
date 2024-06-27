@@ -1,6 +1,40 @@
 {% extends 'base.html' %}
 
-{% block content %}
+{% block header %}
+<div class="header">
     <h1>Algoritimo FizzBuzz</h1>
-    <p>descrição</p>
+</div>
 {% endblock %}
+
+{% block content %}
+ <div class="header">
+    <p>Informe quantos números deseja avaliar:</p>
+ </div>
+
+ <div class="form">
+    <form method="post">
+      <div class="fields">
+        <label for="quantity">
+            quantidade:
+        </label>
+         <input 
+        type="text"
+        name="quantity"
+        id="quantity"
+        placeholder="0 a 100"
+        maxlength="3"
+
+        /></div>
+      
+      <div class="button-container">
+        <button class="button" type="submit">
+            mostrar resultado
+        </button>
+      </div>
+    </form>
+   </div>
+   
+{% endblock %}
+
+
+ 
